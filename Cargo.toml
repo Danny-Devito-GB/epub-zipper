@@ -1,0 +1,10 @@
+[package]
+name = "epub-zipper"
+version = "0.1.0"
+edition = "2024"
+# zip 8.x needs Rust 1.88 or newer.
+rust-version = "1.88"
+
+[dependencies]
+roxmltree = "0.21"
+zip = { version = "8", default-features = false, features = ["deflate"] }
